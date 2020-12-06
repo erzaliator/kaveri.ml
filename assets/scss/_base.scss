@@ -272,8 +272,8 @@ a.dotted-link {
     }
 }
 
-/* Projects Section */
-.projects {
+/* Publications Section */
+.publications {
     .item {
         margin-bottom: 30px;
         .title {
@@ -458,7 +458,7 @@ a.dotted-link {
             font-size: 13px;
             color: $grey;
             font-weight: 600;
-            padding-left: 25px;
+            // padding-left: 25px;
             .year {
                 color: lighten($color, 20%);
                 font-weight: 500;
