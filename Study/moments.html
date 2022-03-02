@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Studies</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kaveri Anuranjana">
+  <meta name="author" content="Kaveri Anuranjana">
+  <link rel="shortcut icon" href="../assets/images/corgi.png">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- FontAwesome JS -->
+  <script defer src="../assets/fontawesome/js/all.js"></script>
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+  <!-- github calendar css -->
+  <link rel="stylesheet" href="../assets/plugins/github-calendar/dist/github-calendar.css">
+  <!-- github activity css -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="../assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+  <!-- ******NAV BAR****** -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">kaveri.ml</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../dev.html">Dev</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../people.html">People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../study.html">Studies</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container sections-wrapper" style="padding-top:100px">
+    <div class="row">
+      <section class="study section">
+        <div class="section-inner shadow-sm rounded">
+  
+          <div class="content">
+            <div class="item">
+              <p class="summary">
+                <h1 class="heading">Moments</h1>
+
+                <h2>What are moments?</h2>
+
+                Moments are set of statistical parameters used to describe a distribution (used in Statistical Estimation and Testing of Hypothesis).
+                These simple calculations are used as a first quantitative insight into the data before training any ML model. 
+                It minimizes the time spent in methodology selection and interpreting results.
+
+                </br></br>Alternatively,</br></br>
+
+                <i>In mathematics, the moments of a function are quantitative measures related to the shape of the function's graph. 
+                If the function represents mass, then the first moment is the center of the mass, and the second moment is the rotational inertia. 
+                
+                </br>If the function is a probability distribution, then the first moment is the expected value, the second central moment is the variance, 
+                the third standardized moment is the skewness, and the fourth standardized moment is the kurtosis. 
+                The mathematical concept is closely related to the concept of moment in physics.</i>
+                </br></br>
+                
+                The <u><b>$n$-th moment</b></u> ($\mu_n$) of a real-valued continuous function $f(x)$ of a real variable about <u>a value c</u> is the integral:
+                \begin{equation}
+                  \mu_n = \mathbb{E}[(x-c)^n] = \int_{-\infty}^{\infty}(x-c)^nf(x)\,dx
+                \end{equation}
+
+                The <u><b>$n$-th raw moment</b></u> ($\mu_n$) (i.e. <u>the moment about zero</u>) is the integral:
+                \begin{equation}
+                  \mu_n^{\prime} = \mathbb{E}[(x)^n] = \int_{-\infty}^{\infty}(x)^nf(x)\,dx
+                \end{equation}
+
+                <h3>The first four statistical moments</h3>
+                <ol>
+                  <li>Mean</li>
+                  <li>Variance</li>
+                  <li>Skewness</li>
+                  <li>Kurtosis</li>
+                </ol> 
+
+                </br></br>
+
+                <h3>First Moment - Mean</h3>
+                The first moment — the <b>expected value</b>, also known as an expectation (<u>the first moment about zero</u>), mathematical expectation, mean, 
+                or average is the sum of all the values the variable can take times the probability of that value occurring:</br></br>
+
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \mu = \mu_1 = \mathbb{E}[x] = \int_{-\infty}^{\infty}(x)^nf(x)\,dx
+                  \end{equation}
+                </div>
+                
+
+                For a discrete random variable (with a Probability Mass Function), it is:
+                \begin{equation}
+                \mathbb{E}[x] = \sum x f(x)
+                \end{equation}
+
+                For a continuous random variable (with a Probability Density Function), it is:
+                \begin{equation}
+                \mathbb{E}[x] = \int_{}^{}x f(x)\,dx
+                \end{equation}
+
+                It can be intuitively understood as the arithmetic mean (for equally probable events):
+
+                \begin{equation}
+                Mean = \mu_1 = {x_1 + x_2 + x_3 + ... + x_n \over n}
+                \end{equation}
+
+                - This is one of the most popular measures of <b>central tendency</b>, often called <u>averages</u>.</br>
+                - It measures the location of the central point.</br></br>
+                The other common measures are:
+
+                <ul>
+                  <li><b>Median</b> - the middle value</li>
+                  <li><b>Mode</b> - the most likely value</li>
+                </ul> 
+
+                </br></br>
+
+                <h3>Second Moment - Variance</h3>
+                The second central moment is <b>variance</b>. Central implies that it is centred about $\mu$.</br>
+                Variance explains how a set of values are spread around their expected value.</br>
+
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \sigma^2 = \mathbb{E}[( X - \mu )^2] = \int_{-\infty}^{\infty}(x - \mu)^2 f(x)\,dx
+                  \end{equation}
+                </div>
+
+                Variance can also be expressed as:
+
+                $$\begin{align}
+                  \sigma^2 &= \mathbb{E}[( X - \mu )^2] \\ 
+                           &= \int_{}^{}(x - \mu)^2 f(x)\,dx \\
+                           &= \int_{}^{}(x^2 + \mu^2 - 2x\mu) f(x)\,dx \\
+                           &= \int_{}^{}x^2 f(x)\,dx +  \mu^2\int_{}^{} f(x)\,dx - 2\mu\int_{}^{}x f(x)\,dx\\
+                           &= \int_{}^{}x^2 f(x)\,dx +  \mu^2.1 - 2\mu\mu\\
+                           &= \int_{}^{}x^2 f(x)\,dx - 2\mu^2\\
+                           &= \mathbb{E}[( X )^2] - \mathbb{E}[X]^2\\
+                \end{align}$$
+
+                Note: from 11->12 the integral in term two is 1 because the area under the curve for a PDF sums to 1.</br>
+
+                Alternatively,
+
+                $$\begin{align}
+                \sigma^2 &= \mathbb{E}[( X - \mu )^2] \\ 
+                         &= \mathbb{E}[( X^2 + \mu^2 -2X\mu)] \\
+                         &= \mathbb{E}[X^2] + \mathbb{E}[\mu^2] - 2\mu\mathbb{E}[X]\\
+                         &= \mathbb{E}[X^2] + \mathbb{E}[\mu^2] - 2\mu.\mu\\
+                         &= \mathbb{E}[( X )^2] - \mathbb{E}[X]^2\\
+                \end{align}$$
+
+                </br>
+
+                <h4>Standard Deviation</h4>
+                Standard deviation is a square root of the variance and is commonly used since its unit is the same as of X:
+                \begin{equation}
+                    \sigma = \sqrt[]{Var(X)}
+                \end{equation}
+
+                Larger the standard deviation, more is the spread and the height reduces and vice-versa. Larger the mean, the location of distribution slides along the x-axis. The image below illustrates the idea:
+                <figure>
+                  <img src="https://miro.medium.com/max/590/1*peh-7DbHHIKv5oDchUBL6Q.png"/>
+                  <figcaption>Fig.1 - Standard deviation is the spread while mean is the location of a normal distribution</br>
+                    Credit: Agnieszka Kujawska
+                  </figcaption>
+                </figure>
+
+                <h4>Mean Absolute Deviation</h4>
+                Mean Absolute Deviation (MAD) is the average distance between each data point and the mean.
+                For equally proabable events, MAD is defined as:
+                \begin{equation}
+                    MAD = { \sum{}{|x - \mu|} \over n}
+                \end{equation}
+
+                <b>Cons of MAD</b>
+                <ul>
+                  <li>Variance is continuous and differentiable, not MAD.</li>
+                  <li>Std dev is a distortion of the concept of variance from a mean, 
+                    since it gives extra weighting to data points far from the mean.
+                    (Contrast 1. Calculate the absolute value of the deviations and sum these.
+                    and 2. Square the deviations and sum these squares. 
+                    Due to the square, you give more weight to high deviations, and hence 
+                    the sum of these squares will be different from the sum of the means.)
+                </li>
+                </ul>
+
+                </br></br>
+
+                <h3>Standardized Moment</h3>
+                The normalised n-th central moment or standardised moment is the n-th central moment divided by $\sigma_n$; 
+                the normalised n-th central moment of the random variable X is:
+                \begin{equation}
+                  {\mu_n \over \sigma^n} = {\mathbb{E}[(X-\mu)^n] \over \sigma^n}
+                \end{equation}
+
+                The numerator is the <b>centered moment of k-th degree</b> (more about this later in a section):
+                \begin{equation}
+                  \mu_n = \mathbb{E}[(X-\mu)^n] = \int_{}^{} (x-2)^2 f(x)\,dx
+                \end{equation}
+
+                The denominator is the <b>k-th power of standard deviation</b>:
+                \begin{equation}
+                  \sigma^n = \left(\sqrt{ \mathbb{E}[(X-\mu)^2] } \right)^k
+                \end{equation}
+
+                The power of k implies that moments scale as $x^k$, thus the standardized moment is <u>scale invariant</u>. 
+                This can also be understood as being because moments have dimension; 
+                in the above ratio defining standardized moments, the dimensions cancel, so they are <u>dimensionless numbers</u>. 
+
+                Here are some good points about <a href="https://en.wikipedia.org/wiki/Scale_invariance" target="_blank">scale invariance</a>.
+
+                </br></br>
+              
+                <h4>1st four standardized moments</h4>
+                The n-th degree a standardized moment is:
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \bar{\mu_n} = { \mu_n \over \sigma^n} = {\mathbb{E}[(X)^n] \over \mathbb{E}[(X-\mu)^2]^{n/2}}
+                  \end{equation}
+                </div>
+
+                Refer to <a href="https://en.wikipedia.org/wiki/Standardized_moment#Standard_normalization" target="_blank">this table</a> for the first four standardized moments.
+
+                </br></br>
+
+                <h3>Third Moment - Skewness</h3>
+                Skewness, which is the third statistical moment measures <b>symmetry of data about its mean</b>.
+                It is defined as a the thrid stadardized moment:
+
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \bar{\mu_3} = { \mu_3 \over \sigma^3} = {\mathbb{E}[(X)^3] \over \mathbb{E}[(X-\mu)^2]^{3/2}}
+                  \end{equation}
+                </div>
+
+                For equally probable events, it is defined as:
+                \begin{equation}
+                  \bar{\mu_3} = { 1 \over n} { \sum_{i=1}^{n} (x_i - \bar{x})^3 \over \sigma^3}
+                \end{equation}
+
+                We can distinguish three types of distribution with respect to its skewness:
+
+                <ul>
+                  <li> <b>symmetrical distribution:</b> Both tails are symmetrical and the skewness is equal to zero.</li>
+                  <li> <b>positive skew</b> (right-skewed, right-tailed, skewed to the right): the right tail (with larger values) is longer. This informs us about 'outliers' that have values higher than the mean. </li>
+                  <li> <b>negative skew</b> (left-skewed, left-tailed, skewed to the left): the left tail (with small values) is longer. This informs us about ‘outliers’ that have values lower than the mean.</li>
+                </ul>
+
+                Skewness impacts the relationship of mean, median, and mode in the following way:
+                <figure>
+                  <img src="https://miro.medium.com/max/700/1*7TxIfaKSmn0v7nS94EGxPQ.png"/>
+                  <figcaption>Fig.2 - Relation of mean, mode, median in different skewed distributions.</br>
+                    Credit: Agnieszka Kujawska
+                  </figcaption>
+                </figure>
+
+                <ul>
+                  <li> for symmetrical distribution: mean = median = mode</li>
+                  <li> for positively skewed distribution: mode &#60; median &#60; mean </li>
+                  <li> for negatively skewed distribution: mean &#60; median &#60; mode </li>
+                </ul>
+
+                But this is not true for all possible distributions. For example, if one tail is long, 
+                but the other is heavy, this may not work. The best way to investigate your data is to 
+                calculate all three estimators and draw conclusions based on the results, rather than general rules.</br></br>
+
+                Here are some <a href="https://www.analyticsvidhya.com/blog/2022/01/moments-a-must-known-statistical-concept-for-data-science/" 
+                target="_blank">formulas</a> for calculating skewness.</br>
+
+                Some transformations to make the distribution normal:
+                <ul>
+                  <li> <b>For Positively skewed (right):</b> Square root, log, inverse, etc.</li>
+                  <li> <b>For Negatively skewed (left):</b> Reflect and Square root, relfect and log, reflect and inverse, etc.</li>
+                </ul>
+
+                <h3>Fourth Moment - Kurtosis</h3>
+                The fourth statistical moment is kurtosis. 
+                It focuses on the tails of the distribution and explains whether the distribution is <b>flat or 
+                rather with a high peak</b>. Kurtosis informs us whether our distribution is richer 
+                in extreme values than normal distribution.
+
+                </br>
+
+                Additionally, <b>excess kurtosis</b> is equal to kurtosis minus 3.
+
+                </br></br>
+
+                We can distinguish three types of distributions:
+                <ul>
+                  <li> <b>Mesokurtic</b> - having the kurtosis of 3 or excess kurtosis of 0. 
+                    This group involves the normal distribution and some specific binomial distributions.</li>
+                  <li> <b>Leptokurtic</b> - the kurtosis is greater than 3, or excess kurtosis is greater than 0. 
+                    This is the distribution with fatter tails and a more narrow peak.</li>
+                  <li> <b>Platykurtic</b> - the kurtosis is smaller than 3 or negative for excess kurtosis. 
+                    This is a distribution with very thin tails compared to the normal distribution.</li>
+                </ul>
+
+                The figure below visualizes three distributions with different kurtosis:
+                <figure>
+                  <img src="https://miro.medium.com/max/687/1*uYm9r0yLb0gxJKpS-DCsKQ.png"/>
+                  <figcaption>Fig.3 - Kurtosis of three different types of distributions.</br>
+                    Credit: Agnieszka Kujawska
+                  </figcaption>
+                </figure>
+
+                High Kurtosis generally is due to the presence of outliers. 
+                <ul>
+                  <li>Kurtosis is defined as the average of the standardized data raised to the fourth power. 
+                    Any standardized values less than |1| (i.e. data within one standard deviation of the mean) 
+                    will contribute petty to kurtosis.</li>
+                    <li>The standardized values that will contribute immensely are the outliers.</li>
+                </ul>
+
+                <h6>References</h6>
+                This article is heavily borrowed from the first two articles. Thanks to their authors!</br>
+                Highly recommend article 1 for beginners.
+                <ul>
+                  <li>https://towardsdatascience.com/statistical-moments-in-data-science-interviews-bfecd207843d</li>
+                  <li>https://www.analyticsvidhya.com/blog/2022/01/moments-a-must-known-statistical-concept-for-data-science/</li>
+                  <li>https://en.wikipedia.org/wiki/Moment_(mathematics)#Standardized_moments</li>
+                  <li>https://en.wikipedia.org/wiki/Standardized_moment#Standard_normalization</li>
+                  <li>https://en.wikipedia.org/wiki/Central_moment</li>
+                </ul>
+
+              </p>
+            </div>
+          </div>
+          <!--//content-->
+        </div>
+        <!--//section-inner-->
+      </section>
+      <!--//section-->
+    </div>
+    <!--//row-->
+    
+  </div>
+  <!--//masonry-->
+
+  <!-- ******FOOTER****** -->
+  <footer class="footer">
+    <div class="container text-center">
+      <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+      <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com"
+          target="_blank">Xiaoying Riley</a> for developers</small>
+    </div>
+    <!--//container-->
+  </footer>
+  <!--//footer-->
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="../assets/plugins/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/popper.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+  <!-- github calendar plugin -->
+  <script type="text/javascript" src="../assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+  <!-- github activity plugin -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+
+</html>
