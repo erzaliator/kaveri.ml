@@ -125,7 +125,7 @@
                 The first moment — the <b>expected value</b>, also known as an expectation (<u>the first moment about zero</u>), mathematical expectation, mean, 
                 or average is the sum of all the values the variable can take times the probability of that value occurring:</br></br>
 
-                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                <div style="background-color:rgb(95, 90, 90);color:white;padding-right: 0.2em">
                   \begin{equation}
                     \mu = \mu_1 = \mathbb{E}[x] = \int_{-\infty}^{\infty}(x)^nf(x)\,dx
                   \end{equation}
@@ -163,7 +163,7 @@
                 The second central moment is <b>variance</b>. Central implies that it is centred about $\mu$.</br>
                 Variance explains how a set of values are spread around their expected value.</br>
 
-                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                <div style="background-color:rgb(95, 90, 90);color:white;padding-right: 0.2em">
                   \begin{equation}
                     \sigma^2 = \mathbb{E}[( X - \mu )^2] = \int_{-\infty}^{\infty}(x - \mu)^2 f(x)\,dx
                   \end{equation}
@@ -233,14 +233,20 @@
                 <h3>Standardized Moment</h3>
                 The normalised n-th central moment or standardised moment is the n-th central moment divided by $\sigma_n$; 
                 the normalised n-th central moment of the random variable X is:
-                \begin{equation}
-                  {\mu_n \over \sigma^n} = {\mathbb{E}[(X-\mu)^n] \over \sigma^n}
-                \end{equation}
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    {\mu_n \over \sigma^n} = {\mathbb{E}[(X-\mu)^n] \over \sigma^n}
+                  \end{equation}
+                </div>
 
-                The numerator is the <b>centered moment of k-th degree</b> (more about this later in a section):
-                \begin{equation}
-                  \mu_n = \mathbb{E}[(X-\mu)^n] = \int_{}^{} (x-2)^2 f(x)\,dx
-                \end{equation}
+                The numerator is the <b>centered moment of k-th degree</b>. 
+                A central moment is a moment of a probability distribution of a random variable defined about the mean of the random variable's i.e, 
+                it is the expected value of a specified integer power of the deviation of the random variable from the mean:
+                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \mu_n = \mathbb{E}[(X-\mu)^n] = \int_{}^{} (x-2)^2 f(x)\,dx
+                  \end{equation}
+                </div>
 
                 The denominator is the <b>k-th power of standard deviation</b>:
                 \begin{equation}
@@ -271,7 +277,7 @@
                 Skewness, which is the third statistical moment measures <b>symmetry of data about its mean</b>.
                 It is defined as a the thrid stadardized moment:
 
-                <div style="background-color:rgb(168, 161, 161);color:white;padding-right: 0.2em">
+                <div style="background-color:rgb(95, 90, 90);color:white;padding-right: 0.2em">
                   \begin{equation}
                     \bar{\mu_3} = { \mu_3 \over \sigma^3} = {\mathbb{E}[(X)^3] \over \mathbb{E}[(X-\mu)^2]^{3/2}}
                   \end{equation}
@@ -323,7 +329,11 @@
                 rather with a high peak</b>. Kurtosis informs us whether our distribution is richer 
                 in extreme values than normal distribution.
 
-                </br>
+                <div style="background-color:rgb(95, 90, 90);color:white;padding-right: 0.2em">
+                  \begin{equation}
+                    \bar{\mu_4} = { \mu_4 \over \sigma^4} = {\mathbb{E}[(X)^4] \over \mathbb{E}[(X-\mu)^2]^{4/2}}
+                  \end{equation}
+                </div>
 
                 Additionally, <b>excess kurtosis</b> is equal to kurtosis minus 3.
 
